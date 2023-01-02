@@ -1,0 +1,35 @@
+<section class="py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="row gx-4 gx-lg-5 align-items-center">
+      <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{userDetails.image}}" alt="{{userDetails.firstName}}" /></div>
+      <div class="col-md-6">
+        <div class="small mb-1"> ID : {{userDetails.id}}</div>
+        <h1 class="display-5 fw-bolder">{{userDetails.firstName}}</h1>
+        <h4>Email : {{userDetails.email}}</h4>
+        <h4>Password : {{userDetails.password}}</h4>
+        <h4>Age : {{userDetails.age}}</h4>
+        <h4>Contact : {{userDetails.phone}}</h4>
+        <h4>Blood Group : {{userDetails.bloodGroup}}</h4>
+        <h4>Address : {{userDetails.address.address}}</h4>                
+        <h4>Department : {{userDetails.company.department}}</h4>
+        <br>
+        <p>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            User Details
+          </button>
+        </p>
+        <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample">
+            <div class="card card-body  " style="width: 500px; background-color:skyblue;">
+              <h5>Cardexpire : {{userDetails.bank.cardExpire}}</h5>
+              <h5>CardNumber : {{userDetails.bank.cardNumber}}</h5>
+              <h5>CardType : {{userDetails.bank.cardType}}</h5>
+              <h5>Currency : {{userDetails.bank.currency}}</h5>
+              <h5>Iban : {{userDetails.bank.iban}}</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
